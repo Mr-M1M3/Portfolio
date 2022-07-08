@@ -16,9 +16,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
 </svelte:head>
 
-<main class="flex flex-col justify-between min-h-screen">
+<main class="flex flex-col justify-between min-h-screen bg-s-black">
     <Nav />
-    <section class="content flex-grow">
+    <section class="content flex-grow grid">
         <slot></slot>
     </section>
     <Footer/>
