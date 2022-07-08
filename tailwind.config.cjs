@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        'cursive': ['Sacramento', 'cursive'],
+        'cursive': ['Merienda', 'cursive'],
         'stylish': ['Lora', 'serif'],
         'primary': ['Mitr', 'sans-serif'],
         'secondary': ['Numans', 'sans-serif']
