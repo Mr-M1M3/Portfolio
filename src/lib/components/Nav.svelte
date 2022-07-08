@@ -6,36 +6,53 @@
 <nav class="bg-s-black text-s-primary font-bold py-3 px-3 flex justify-between">
   <section class="logo">
     <h1 class="font-cursive text-2xl">
+        <a href="/">
       <span>&lt;</span>
       <span>Mr. M1M3</span>
-      <span class="">&#47;&gt;</span>
+      <span class="">&#47;&gt;</span></a>
     </h1>
   </section>
   <section class="navigator">
     <span
-      class="burger relative flex justify-center items-center h-7 w-7 cursor-pointer"
+      class="md:hidden burger relative flex justify-center items-center h-7 w-7 cursor-pointer"
       class:active={$isBurgerActive}
       on:click={() => {
         $isBurgerActive = !$isBurgerActive;
       }}
     />
+    <ul class="hidden md:flex h-full">
+        <li class="rounded-md nav-link h-full relative mx-2 w-24 flex justify-center items-center">
+         <a class="text-center h-full w-full" href="#skills">Skills</a
+            >
+          </li>
+          <li class="rounded-md nav-link h-full relative mx-2 w-24 flex justify-center items-center">
+         <a class="text-center h-full w-full" href="#projects"
+              >Projects</a
+            >
+          </li>
+          <li class="rounded-md nav-link h-full relative mx-2 w-24 flex justify-center items-center">
+         <a class="text-center h-full w-full" href="#contact"
+              >Contact</a
+            >
+          </li>
+    </ul>
   </section>
 </nav>
 {#key $isBurgerActive}
   {#if $isBurgerActive}
     <nav class="extra bg-s-black text-white" transition:slide>
       <ul class="py-2 font-primary text-lg px-3">
-        <li class="hover:bg-s-primary hover:bg-s-primary/80 rounded-md">
-          <a class="w-full py-2 px-3 my-1 inline-block" href="#skills">Skills</a
+        <li class="hover:bg-s-primary/80 rounded-md my-2">
+          <a class="w-full p-3 inline-block" href="#skills">Skills</a
           >
         </li>
-        <li class="hover:bg-s-primary hover:bg-s-primary/80 rounded-md">
-          <a class="w-full py-2 px-3 my-1 inline-block" href="#projects"
+        <li class="hover:bg-s-primary/80 rounded-md my-2">
+          <a class="w-full p-3 inline-block" href="#projects"
             >Projects</a
           >
         </li>
-        <li class="hover:bg-s-primary hover:bg-s-primary/80 rounded-md">
-          <a class="w-full py-2 px-3 my-1 inline-block" href="#contact"
+        <li class="hover:bg-s-primary/80 rounded-md my-2">
+          <a class="w-full p-3 inline-block" href="#contact"
             >Contact</a
           >
         </li>
@@ -71,5 +88,20 @@
   }
   .burger.active::after {
     transform: translateY(0) rotate(-45deg);
+  }
+  .nav-link::after{
+    content: "";
+    height: 2px;
+    width: 0;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(0.125rem);
+    background: #f6ae2d;
+    transition: 0.25s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+  .nav-link:hover::after{
+    width: 100%;
   }
 </style>
