@@ -3,7 +3,7 @@
   import { slide } from "svelte/transition";
 </script>
 
-<nav class="bg-s-black text-s-primary font-bold py-3 px-3 flex justify-between">
+<nav class="bg-s-black text-s-primary font-bold py-6 px-4 md:py-8 md:px-6 flex justify-between">
   <section class="logo">
     <h1 class="font-cursive text-2xl">
         <a href="/">
