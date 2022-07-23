@@ -3,7 +3,7 @@
   import Icon from "@iconify/svelte";
   export let data = [];
 </script>
-<section class="skills p-y-4 px-5 py-3 grid grid-cols-1 md:grid-cols-2">
+<section class="skills p-y-4 px-5 py-3 grid grid-cols-1 md:grid-cols-2 my-3">
   <div class="coding flex justify-center items-center">
     <img src="/images/coding.svg" alt="" class="max-w-md"/>
   </div>

@@ -2,7 +2,7 @@
   import Typewriter from "$lib/components/Typewriter.svelte";
 </script>
 
-<div class="grid content-center justify-center grid-cols-1 md:grid-cols-2 md:grid-rows-1 min-h-screen md:min-h-fit">
+<header class="grid content-center justify-center grid-cols-1 md:grid-cols-2 md:grid-rows-1 min-h-screen md:min-h-fit">
   <div class="flex justify-center items-center flex-col px-2 h-full">
     <h1 class="text-s-primary text-8xl font-primary">Hello!</h1>
     <p class="text-white text-2xl my-4">
@@ -28,7 +28,7 @@
       <a href="/" class="bg-s-primary text-center font-bold rounded-md leading-10 px-4 py-1 w-full my-2 mx-2">Resume</a>
     </p>
   </div>
-</div>
+</header>
 
 <style>
   .image-container{
