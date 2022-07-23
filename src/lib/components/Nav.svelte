@@ -41,7 +41,7 @@
 {#key $isBurgerActive}
   {#if $isBurgerActive}
     <nav class="extra bg-s-black text-white" transition:slide>
-      <ul class="py-2 font-primary text-lg px-3">
+      <ul class="py-2 font-secondary text-lg px-3">
         <li class="hover:bg-s-primary/80 rounded-md my-2">
           <a class="w-full p-3 inline-block" href="#skills">Skills</a
           >

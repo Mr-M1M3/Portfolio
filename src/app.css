@@ -5,3 +5,6 @@
 html{
     scroll-behavior: smooth;
 }
+p{
+    @apply font-primary
+}

@@ -5,8 +5,7 @@ module.exports = {
     extend: {
       fontFamily:{
         'cursive': ['Merienda', 'cursive'],
-        'stylish': ['Lora', 'serif'],
-        'primary': ['Mitr', 'sans-serif'],
+        'primary': ['Poppins', 'sans-serif'],
         'secondary': ['Numans', 'sans-serif']
       },
       colors: {

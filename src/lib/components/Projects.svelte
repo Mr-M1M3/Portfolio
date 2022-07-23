@@ -5,7 +5,7 @@
 </script>
 
 <section class="projects px-4 md:px-8 lg:px-16 py-2 my-3">
-  <h1 class="text-4xl lg:text-5xl text-s-primary my-8 text-center" id="projects">Projects I've Done So Far</h1>
+  <h1 class="text-4xl lg:text-5xl text-s-primary my-8 text-center font-secondary" id="projects">Projects I've Done</h1>
   <div class="projects-container grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 my-8">
     {#if browser}
       {#each data as project}
@@ -14,7 +14,7 @@
           on:click="{() => {window.open(project.url, "_blank")}}"
         >
           <p
-            class="flex justify-start items-center text-s-primary font-bold my-2 w-full"
+            class="flex justify-start items-center text-s-primary font-bold my-2 w-full font-secondary"
           >
             <span class="text-3xl"><Icon icon="bi:code" /></span>
             <span class="text-xl mx-3">{project.name}</span>
