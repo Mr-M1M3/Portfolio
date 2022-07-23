@@ -4,8 +4,8 @@
   import { browser } from "$app/env";
 </script>
 
-<section class="projects px-3 py-2 my-3">
-  <h1 class="text-3xl text-s-primary my-4 text-center">Projects I've Done So Far</h1>
+<section class="projects px-4 md:px-8 lg:px-16 py-2 my-3">
+  <h1 class="text-3xl text-s-primary my-4 text-center" id="projects">Projects I've Done So Far</h1>
   <div class="projects-container grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
     {#if browser}
       {#each data as project}

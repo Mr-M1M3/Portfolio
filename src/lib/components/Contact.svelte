@@ -3,10 +3,10 @@
   export let data = [];
 </script>
 
-<section class="px-5 py-3">
+<section class="px-5 py-3" id="contact">
   <h1 class="text-4xl lg:text-5xl text-s-primary my-4 text-center md:hidden">Reach Out To Me</h1>
-  <div class="contacts-container grid grid-cols-1 place-items-center md:grid-cols-2 md:place-items-start">
-    <figure class="max-w-xs h-full">
+  <div class="contacts-container grid grid-cols-1 place-items-center md:grid-cols-2 md:place-items-center">
+    <figure class="max-w-xs h-full flex justify-center items-center flex-col">
       <img src="/images/me.jpg" alt="" class="rounded-full border-8 border-s-primary" />
       <figcaption class="text-white font-bold text-lg my-3 text-centers">
         <p class="flex justify-center items-center">
@@ -17,7 +17,7 @@
         </p>
       </figcaption>
     </figure>
-    <div class="social-list flex-grow w-full h-full flex flex-col justify-between items-center">
+    <div class="social-list h-full flex flex-col justify-between items-center">
         <h1 class="text-4xl lg:text-5xl text-s-primary my-4 text-center hidden md:block">Reach Out To Me</h1>
         
         <div class="texts">
