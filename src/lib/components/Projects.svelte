@@ -10,7 +10,8 @@
     {#if browser}
       {#each data as project}
         <div
-          class="bg-s-white-transparent px-3 py-4 rounded-md h-40 overflow-hidden flex flex-col justify-start"
+          class="bg-s-white-transparent px-3 py-4 rounded-md h-40 overflow-hidden flex flex-col justify-start cursor-pointer"
+          on:click="{() => {window.open(project.url, "_blank")}}"
         >
           <p
             class="flex justify-start items-center text-s-primary font-bold my-2 w-full"
