@@ -22,7 +22,7 @@
     </p>
   </div>
   <div class="image-container grid md:flex justify-center items-center">
-    <img src="/images/hero.svg" alt="" class="max-w-full md:w-full"/>
+    <img src="/images/hero.svg" alt="" class="max-w-full md:w-full" data-aos="zoom-in"/>
     <p class="flex justify-center items-center px-2 md:hidden w-full">
       <a href="/" class="bg-s-primary text-center font-bold rounded-md leading-10 px-4 py-1 w-full my-2 mx-2">Hire Me</a>
       <a href="/" class="bg-s-primary text-center font-bold rounded-md leading-10 px-4 py-1 w-full my-2 mx-2">Resume</a>
