@@ -12,8 +12,6 @@
     href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merienda:wght@400;700&family=Mitr:wght@200;300;700&family=Numans&display=swap"
     rel="stylesheet"
   />
-  <!-- Material Icons -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
 </svelte:head>
 
 <main class="flex flex-col justify-between min-h-screen bg-s-black">

@@ -8,7 +8,7 @@
   <div class="contacts-container grid grid-cols-1 place-items-center md:grid-cols-2 md:place-items-center">
     <figure class="max-w-xs h-full flex justify-center items-center flex-col">
       <img src="/images/me.jpg" alt="" class="rounded-full border-8 border-s-primary" />
-      <figcaption class="text-white font-bold text-lg my-3 text-centers">
+      <figcaption class="text-white font-bold text-lg my-3 text-centers md:hidden">
         <p class="flex justify-center items-center">
           "It's not a bug <span
             class="flex justify-center items-center mx-2 text-red-600"
@@ -21,7 +21,7 @@
         <h1 class="text-4xl lg:text-5xl text-s-primary my-4 text-center hidden md:block">Reach Out To Me</h1>
         
         <div class="texts">
-            <p class="hidden justify-center items-center text-white font-bold text-2xl my-3 text-centers md:flex">
+            <p class="hidden justify-center items-center text-white font-bold text-2xl my-3 text-centers md:flex flex-wrap">
                 "It's not a bug <span
                   class="flex justify-center items-center mx-2 text-red-600"
                   ><i class="text-xl"><Icon icon="tabler:bug-off" /></i><i>!</i></span

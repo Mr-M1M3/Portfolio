@@ -5,8 +5,8 @@
 </script>
 
 <section class="projects px-4 md:px-8 lg:px-16 py-2 my-3">
-  <h1 class="text-3xl text-s-primary my-4 text-center" id="projects">Projects I've Done So Far</h1>
-  <div class="projects-container grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+  <h1 class="text-4xl lg:text-5xl text-s-primary my-8 text-center" id="projects">Projects I've Done So Far</h1>
+  <div class="projects-container grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 my-8">
     {#if browser}
       {#each data as project}
         <div
