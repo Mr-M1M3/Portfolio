@@ -1,7 +1,7 @@
 <script>
   export let data = [];
   import Icon from "@iconify/svelte";
-  import { browser } from "$app/env";
+  import { browser } from "$app/environment";
 </script>
 
 <section class="projects px-4 md:px-8 lg:px-16 py-2 my-3">

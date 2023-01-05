@@ -1,5 +1,5 @@
 <script>
-  import { browser } from "$app/env";
+  import { browser } from "$app/environment";
   import Icon from "@iconify/svelte";
   export let data = [];
 </script>

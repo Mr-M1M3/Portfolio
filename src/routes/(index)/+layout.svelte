@@ -1,8 +1,7 @@
 <script>
-  import "../app.css";
-  import Nav from "$lib/components/Nav.svelte";
-  import Footer from "$lib/components/Footer.svelte";
-  import {browser} from '$app/env';
+  import Nav from "$lib/client/components/Nav.svelte";
+  import Footer from "$lib/client/components/Footer.svelte";
+  import {browser} from '$app/environment';
   import "aos/dist/aos.css";
   import AOS from "aos";
   if (browser) {

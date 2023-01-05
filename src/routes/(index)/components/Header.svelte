@@ -1,5 +1,5 @@
 <script>
-  import Typewriter from "$lib/components/Typewriter.svelte";
+  import Typewriter from "./Typewriter.svelte";
 </script>
 
 <header class="grid content-center justify-center grid-cols-1 md:grid-cols-2 md:grid-rows-1 min-h-screen md:min-h-fit">

@@ -1,5 +1,5 @@
 <script>
-  import { isBurgerActive } from "$lib/scripts/stores.js";
+  import { isBurgerActive } from "$lib/client/scripts/stores.js";
   import { slide } from "svelte/transition";
 </script>
 
