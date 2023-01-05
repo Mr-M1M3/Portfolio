@@ -6,7 +6,7 @@
 
 <section class="projects px-4 md:px-8 lg:px-16 py-2 my-3">
   <h1
-    class="text-4xl lg:text-5xl text-s-primary my-8 text-center font-secondary"
+    class="heading"
     id="projects"
   >
     Projects I've Done

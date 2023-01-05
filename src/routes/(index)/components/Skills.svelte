@@ -8,7 +8,7 @@
     <img src="/images/coding.svg" alt="" class="max-w-md" data-aos="fade-right"/>
   </div>
   <div class="heading-with-skills flex flex-col">
-    <h1 class="text-4xl lg:text-5xl text-s-primary text-center font-secondary my-4" id="skills">Things I work with</h1>
+    <h1 class="heading" id="skills">Things I work with</h1>
     <div class="skills-container flex-grow flex content-center flex-wrap justify-center items-center ">
       {#if browser}
         {#each data as datum}

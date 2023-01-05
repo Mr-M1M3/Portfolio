@@ -4,7 +4,7 @@
 </script>
 
 <section class="px-5 py-3" id="contact">
-  <h1 class="text-4xl lg:text-5xl text-s-primary my-4 text-center font-secondary md:hidden">Reach Out To Me</h1>
+  <h1 class="heading font-secondary md:hidden">Reach Out To Me</h1>
   <div class="contacts-container grid grid-cols-1 place-items-center md:grid-cols-2 md:place-items-center">
     <figure class="max-w-xs h-full flex justify-center items-center flex-col">
       <img src="/images/me.jpg" alt="" class="rounded-full border-8 border-s-primary" data-aos="zoom-in"/>
@@ -18,7 +18,7 @@
       </figcaption>
     </figure>
     <div class="social-list h-full flex flex-col justify-between items-center">
-        <h1 class="text-4xl lg:text-5xl text-s-primary my-4 text-center hidden md:block">Reach Out To Me</h1>
+        <h1 class="heading hidden md:block">Reach Out To Me</h1>
         
         <div class="texts">
             <p class="hidden justify-center items-center text-white font-bold text-2xl my-3 text-centers md:flex flex-wrap">
@@ -50,10 +50,6 @@
         </ul>
     </div>
   </div>
-
-  <!-- <figure>
-    <img src="" alt="">
-  </figure> -->
 </section>
 
 <style>
