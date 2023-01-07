@@ -30,7 +30,7 @@
             <p class="text-lg text-white my-3 text-center">Liked my works? Stay Connected.</p>
         </div>
         <ul class="socials flex justify-center items-center">
-          {#each data as social}
+          {#each data as social (social.id)}
             <li data-aos="zoom-out">
               <a
                 href={social.url}
@@ -39,7 +39,7 @@
                 <span
                   class="text-3xl md:text-4xl"
                   style={social.color ? `color:${social.color}` : ""}
-                  ><Icon icon={social.icon} /></span
+                  ><Icon icon={social.iconify_class} /></span
                 >
                 <span class="text-white capitalize inline-block my-1"
                   >{social.name}</span

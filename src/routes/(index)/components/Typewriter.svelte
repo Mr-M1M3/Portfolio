@@ -7,6 +7,7 @@
   let index = 0;
   let typingIndex = 0;
   let increase = true;
+  // TODO: wait after typing has finished
     function startType(ms) {
       setInterval(() => {
           if(type[index].charAt(typingIndex + 1) && increase){

@@ -18,6 +18,9 @@ const config = {
       // instead of creating a single one for the entire app
       split: false,
     }),
+    env:{
+      publicPrefix: 'PUB_'
+    }
   },
   preprocess: [
     preprocess({
