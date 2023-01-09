@@ -11,7 +11,9 @@
   // destructure data received from server
   const {skills, projects, socials} = data;
 </script>
-
+<svelte:head>
+  <title>Mr-M1M3 - A Computer Addicted</title>
+</svelte:head>
 <Header />
 <Skills data={skills} />
 <Projects data={projects} />
