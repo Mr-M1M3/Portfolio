@@ -2,7 +2,7 @@
   import { browser } from "$app/environment";
   import Icon from "@iconify/svelte";
   export let data = [];
-
+  data = data.sort((a, b) => a.order - b.order);
 </script>
 <section class="skills px-5 py-3 grid grid-cols-1 md:grid-cols-2 my-3 overflow-hidden">
   <div class="coding flex justify-center items-center">
