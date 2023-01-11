@@ -5,7 +5,7 @@
 
 <nav class="bg-s-black text-s-primary font-bold py-6 px-4 md:py-8 md:px-6 flex justify-between">
   <section class="logo">
-    <h1 class="font-cursive text-2xl">
+    <h1 class="font-s-cursive text-2xl">
         <a href="/">
       <span>&lt;</span>
       <span>Mr. M1M3</span>
@@ -41,7 +41,7 @@
 {#key $isBurgerActive}
   {#if $isBurgerActive}
     <nav class="extra bg-s-black text-white" transition:slide>
-      <ul class="py-2 font-secondary text-lg px-3">
+      <ul class="py-2 font-s-secondary text-lg px-3">
         <li class="hover:bg-s-primary/80 rounded-md my-2">
           <a class="w-full p-3 inline-block" href="#skills">Skills</a
           >

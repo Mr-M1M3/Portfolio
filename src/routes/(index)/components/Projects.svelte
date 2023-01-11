@@ -24,7 +24,7 @@
           }}
         >
           <p
-            class="flex justify-start items-center text-s-primary font-bold my-2 w-full font-secondary"
+            class="flex justify-start items-center text-s-primary font-bold my-2 w-full font-s-secondary"
           >
             <span class="text-3xl"><Icon icon="bi:code" /></span>
             <span class="text-xl mx-3">{project.name}</span>

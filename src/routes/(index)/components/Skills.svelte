@@ -17,7 +17,7 @@
             <p class="text-6xl">
               <Icon icon={datum.iconify_class} />
             </p>
-            <p class="text-md text-white font-bold my-1 font-secondary">{datum.name}</p>
+            <p class="text-md text-white font-bold my-1 font-s-secondary">{datum.name}</p>
           </div>
         {/each}
       {/if}

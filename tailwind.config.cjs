@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        cursive: ["Merienda", "cursive"],
-        primary: ["Poppins", "sans-serif"],
-        secondary: ["Numans", "sans-serif"],
+        "s-cursive": ["Merienda", "cursive"],
+        "s-primary": ["Poppins", "sans-serif"],
+        "s-secondary": ["Numans", "sans-serif"],
       },
       colors: {
         "s-black": "#0F1A20",

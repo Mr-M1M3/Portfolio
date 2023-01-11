@@ -4,7 +4,7 @@
 </script>
 
 <section class="px-5 py-3" id="contact">
-  <h1 class="heading font-secondary md:hidden">Reach Out To Me</h1>
+  <h1 class="heading font-s-secondary md:hidden">Reach Out To Me</h1>
   <div class="contacts-container grid grid-cols-1 place-items-center md:grid-cols-2 md:place-items-center">
     <figure class="max-w-xs h-full flex justify-center items-center flex-col">
       <img src="/images/me.jpg" alt="" class="rounded-full border-8 border-s-primary" data-aos="zoom-in"/>
