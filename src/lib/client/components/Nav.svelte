@@ -3,7 +3,7 @@
   import { slide } from "svelte/transition";
 </script>
 
-<nav class="bg-s-black text-s-primary font-bold py-6 px-4 md:py-8 md:px-6 flex justify-between">
+<nav class="bg-s-black text-s-primary font-bold h-24 py-6 px-4 md:py-8 md:px-6 flex justify-between">
   <section class="logo">
     <h1 class="font-s-cursive text-2xl">
         <a href="/">
@@ -22,17 +22,22 @@
     />
     <ul class="hidden md:flex h-full">
         <li class="rounded-md nav-link h-full relative mx-2 w-24 flex justify-center items-center">
-         <a class="text-center h-full w-full" href="#skills">Skills</a
+         <a class="text-center h-full w-full" href="/#skills" on:click={() => {console.log('clicked')}}>Skills</a
             >
           </li>
           <li class="rounded-md nav-link h-full relative mx-2 w-24 flex justify-center items-center">
-         <a class="text-center h-full w-full" href="#projects"
+         <a class="text-center h-full w-full" href="/#projects"
               >Projects</a
             >
           </li>
           <li class="rounded-md nav-link h-full relative mx-2 w-24 flex justify-center items-center">
-         <a class="text-center h-full w-full" href="#contact"
+         <a class="text-center h-full w-full" href="/#contact"
               >Contact</a
+            >
+          </li>
+          <li class="rounded-md nav-link h-full relative mx-2 w-24 flex justify-center items-center">
+         <a class="text-center h-full w-full" href="/blog"
+              >Blog</a
             >
           </li>
     </ul>

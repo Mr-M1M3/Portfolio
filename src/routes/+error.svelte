@@ -17,7 +17,7 @@
       <h1 class="text-8xl text-white font-bold font-s-cursive text-center">
         Oops!  
       </h1>
-      <p class="text-xl text-white font-bold font-s-cursive text-center my-8 leading-loose"><span class="text-3xl">{status ?? ""}</span> {error.message ?? "Something went wrong"}</p>
+      <p class="text-xl text-white font-bold font-s-cursive text-center my-8 leading-loose">Error <span class="text-3xl text-red-500">{status ?? ""},</span> {error.message ?? "Something went wrong"}</p>
     </section>
     <section class="images flex-grow flex justify-center items-center">
       {#if (status >= 400) && (status < 500)}
@@ -29,3 +29,9 @@
     <button class="bg-s-primary my-4 mx-4 h-14 rounded-md text-center font-bold text-xl" on:click="{() => {goto("/")}}">Go Home</button>
   </div>
 </main>
+
+<style>
+  .wrapper{
+    height: calc(100vh - 6rem);
+  }
+</style>
