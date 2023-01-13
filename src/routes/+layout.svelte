@@ -1,5 +1,11 @@
 <script>
   import "../app.postcss";
+  import Icon from "@iconify/svelte";
+
+  function scroll_to_top(){
+    location.hash = "";
+    scrollTo(0, 0);
+  }
 </script>
 
 
@@ -13,4 +19,8 @@
   />
 </svelte:head>
 
+<div class="h-12 w-12 text-2xl fixed bottom-0 right-0 m-6 bg-s-primary z-50 flex justify-center items-center rounded-full cursor-pointer" on:click={scroll_to_top}>
+  <Icon icon="mdi:arrow-up"/>
+</div>
 <slot />
+
