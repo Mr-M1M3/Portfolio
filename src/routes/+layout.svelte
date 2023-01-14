@@ -19,7 +19,7 @@
   />
 </svelte:head>
 
-<div class="h-12 w-12 text-2xl fixed bottom-0 right-0 m-6 bg-s-primary z-50 flex justify-center items-center rounded-full cursor-pointer" on:click={scroll_to_top}>
+<div class="h-12 w-12 text-2xl fixed bottom-0 right-0 m-6 bg-s-black text-white border-2 border-s-primary z-50 flex justify-center items-center rounded-full cursor-pointer" on:click={scroll_to_top}>
   <Icon icon="mdi:arrow-up"/>
 </div>
 <slot />
