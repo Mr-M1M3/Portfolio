@@ -1,6 +1,18 @@
 <script>
   import { isBurgerActive } from "$lib/client/scripts/stores.js";
   import { slide } from "svelte/transition";
+  import {goto} from "$app/navigation";
+
+  export let reset = false;
+  async function navigate(href ='/'){
+    if(reset){
+      $isBurgerActive = !$isBurgerActive;
+      await goto(href);
+      $isBurgerActive = !$isBurgerActive;
+    }else{
+      goto(href);
+    }
+  }
 </script>
 
 <nav class="bg-s-black text-s-primary font-bold h-24 py-6 px-4 md:py-8 md:px-6 flex justify-between">
@@ -22,23 +34,16 @@
     />
     <ul class="hidden md:flex h-full">
         <li class="rounded-md nav-link h-full relative mx-2 w-24 flex justify-center items-center">
-         <a class="text-center h-full w-full" href="/#skills" on:click={() => {console.log('clicked')}}>Skills</a
-            >
+         <button class="text-center h-full w-full" on:click={() => {navigate("/#skills")}}>Skills</button>
           </li>
           <li class="rounded-md nav-link h-full relative mx-2 w-24 flex justify-center items-center">
-         <a class="text-center h-full w-full" href="/#projects"
-              >Projects</a
-            >
+         <button class="text-center h-full w-full" on:click={() => {navigate("/#projects")}}>Projects</button>
           </li>
           <li class="rounded-md nav-link h-full relative mx-2 w-24 flex justify-center items-center">
-         <a class="text-center h-full w-full" href="/#contact"
-              >Contact</a
-            >
+         <button class="text-center h-full w-full" on:click={() => {navigate("/#contact")}}>Contact</button>
           </li>
           <li class="rounded-md nav-link h-full relative mx-2 w-24 flex justify-center items-center">
-         <a class="text-center h-full w-full" href="/blog"
-              >Blog</a
-            >
+         <button class="text-center h-full w-full" on:click={() => {navigate("/blog")}}>Blog</button>
           </li>
     </ul>
   </section>
@@ -48,18 +53,16 @@
     <nav class="extra bg-s-black text-white" transition:slide>
       <ul class="py-2 font-s-secondary text-lg px-3">
         <li class="hover:bg-s-primary/80 rounded-md my-2">
-          <a class="w-full p-3 inline-block" href="#skills">Skills</a
-          >
+          <button class="text-left w-full p-3 inline-block" on:click={() => {navigate("/#skills")}}>Skills</button>
         </li>
         <li class="hover:bg-s-primary/80 rounded-md my-2">
-          <a class="w-full p-3 inline-block" href="#projects"
-            >Projects</a
-          >
+          <button class="text-left w-full p-3 inline-block" on:click={() => {navigate("/#projects")}}>Projects</button>
         </li>
         <li class="hover:bg-s-primary/80 rounded-md my-2">
-          <a class="w-full p-3 inline-block" href="#contact"
-            >Contact</a
-          >
+          <button class="text-left w-full p-3 inline-block" on:click={() => {navigate("/#contacts")}}>Contact</button>
+        </li>
+        <li class="hover:bg-s-primary/80 rounded-md my-2">
+          <button class="text-left w-full p-3 inline-block" on:click={() => {navigate("/blog")}}>Blog</button>
         </li>
       </ul>
     </nav>

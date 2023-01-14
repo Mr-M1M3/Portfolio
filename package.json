@@ -22,7 +22,6 @@
   "type": "module",
   "dependencies": {
     "@sveltejs/adapter-node": "^1.1.1",
-    "aos": "^2.3.4",
     "dotenv": "^16.0.3",
     "pocketbase": "^0.10.0"
   }
