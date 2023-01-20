@@ -22,7 +22,12 @@
   "type": "module",
   "dependencies": {
     "@sveltejs/adapter-node": "^1.1.1",
+    "aos": "^2.3.4",
     "dotenv": "^16.0.3",
-    "pocketbase": "^0.10.0"
+    "github-markdown-css": "^5.1.0",
+    "highlight.js": "^11.7.0",
+    "marked": "^4.2.12",
+    "pocketbase": "^0.10.0",
+    "svelte-action-balancer": "^1.0.4"
   }
 }

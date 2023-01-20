@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js,svelte,ts}"],
+  content: ["./src/**/*.{html,js,svelte,ts}",
+            // "!./src/routes/blog/[blog]/+page.svelte"
+          ],
   theme: {
     extend: {
       fontFamily: {

@@ -9,7 +9,10 @@
   import Contact from "./components/Contact.svelte";
 
   // destructure data received from server
-  const {skills, projects, socials} = data;
+  // const {skills, projects, socials} = data;
+  const skills = data.skills.items;
+  const projects = data.projects.items;
+  const socials = data.socials.items;
 </script>
 <svelte:head>
   <title>Mr-M1M3 - A Computer Addicted</title>
